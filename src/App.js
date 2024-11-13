@@ -2,7 +2,7 @@ import './style.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Services from './components/Services';
 import Contacts from './components/Contacts';
 import Technic from './components/Technic';
@@ -15,7 +15,7 @@ import Popup from './components/Popup';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
       <Header/>
       <Routes>
         <Route path="/" element={<Main/>} />
@@ -29,7 +29,7 @@ function App() {
         <Route path="/services/marine" element={<Marine/>} />
       </Routes>
       <Footer/>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

@@ -9,7 +9,6 @@ function Main() {
 
   return (
     <div className="main">
-    
    <About/>
    <Preeminence/>
    <Carousel items={items} active={0}/>
