@@ -1,0 +1,352 @@
+.expa{
+    margin-top: -7.5rem;
+    flex: 1 0 auto;
+    &__about{
+        background: url(./img/expaBG.png) no-repeat;
+        background-position: top right;
+        background-size: cover;
+        padding-top: 7.5rem;
+        height: 75vh;
+        position: relative;
+        @media (max-width: 768px){   
+            background-position: 80% 50%;
+            height: 70vmax;
+        }
+    
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 95%;
+            background:
+            linear-gradient(90deg, rgba(0,128,129,1) 0%, rgba(0,128,129,0.47) 60%, rgba(0,128,129,0.1) 80%),
+            linear-gradient(90deg, rgba(0,128,129,1) 5%, rgba(0,128,129,0.47) 49%, rgba(0,128,129,0.1) 89%),
+            linear-gradient(90deg, rgba(0,128,129,1) 0%, rgba(0,128,129,0.47) 36%, rgba(0,128,129,0.1) 75%);
+            border-radius: 0 0 50px 0;
+            opacity: 0.95;
+            z-index: 1;
+            backdrop-filter: blur(13px);
+            -webkit-backdrop-filter: blur(13px);
+            @media (max-width: 768px){   
+                width: 70%;
+                }
+        }
+    
+    &_title{
+        margin: 3em 0 1em;
+        @include adaptiv-font(45, 10);
+        text-transform: uppercase;
+        color: #ffffff;
+        z-index: 1;
+        position: relative;
+        letter-spacing: 0.08em;
+        max-width: 70%; 
+        @media (max-width: 768px){   
+            @include adaptiv-font(45, 25);
+                }
+}
+    &_text{
+        width: 50%;
+        z-index: 1;
+        position: relative;
+        @include adaptiv-font(17, 5);
+        line-height: 1.7em;
+        color: #ffffff;
+        @media (max-width: 768px){   
+            @include adaptiv-font(20, 10);
+            width: 70%;
+            }
+        &:nth-child(2){
+            margin-bottom: 1.5em;
+    }
+    }
+}
+
+    &__subtitle{
+        font-weight: 600;
+        @include adaptiv-font(24, 10);
+        line-height: 1.1em;
+        padding-bottom: 0.5em;
+        border-bottom: 2px solid #3CD1C2;
+        margin-top: 4.41em;
+
+}
+    &__map {
+        background: url(./img/expamap.png) no-repeat;
+        background-size: contain;
+        min-width: 100%;
+        aspect-ratio: 16/9;
+        margin-top: 3.375em;
+        margin-bottom: 5.375em;
+        @include adaptiv-font(24, 10);
+        position: relative;
+    }
+    &__kolalI {
+        background: url(./img/kolali.png) no-repeat !important;
+        background-size: contain !important;
+        position: absolute !important ;
+        width: 4.3% !important;
+        aspect-ratio: 1/1 !important;
+        top:16% !important;
+        left: 28% !important;
+        &  .popup__content_active{
+            transition: top 1ms linear, opacity 0.5s linear;
+            left: 50%;
+            top: 50%;
+            opacity: 1;
+        }
+    }
+    &__kolaggk {
+        background: url(./img/kolali.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 4.3%;
+        aspect-ratio: 1/1;
+        top:40%;
+        left: 17%;
+        &  .popup__content_active{
+            transition: top 1ms linear, opacity 0.5s linear;
+            left: 50%;
+            top: 50%;
+            opacity: 1;
+        }
+    }
+    &__asphalt {
+        background: url(./img/Асasphalt.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 6.7%;
+        aspect-ratio: 1/1;
+        top:60%;
+        left: 19%;
+        &  .popup__content_active{
+            transition: top 1ms linear, opacity 0.5s linear;
+            left: 50%;
+            top: 50%;
+            opacity: 1;
+        }
+    }
+    &__dikson {
+        background: url(./img/dikson.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 10.3%;
+        aspect-ratio: 1/1;
+        top:30%;
+        left: 38%;
+        &  .popup__content_active{
+            transition: top 1ms linear, opacity 0.5s linear;
+            left: 50%;
+            top: 50%;
+            opacity: 1;
+        }
+    }
+    &__ingeo {
+        background: url(./img/kolali.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 4.3%;
+        aspect-ratio: 1/1;
+        top:27%;
+        left: 47.25%;
+        &  .popup__content_active{
+            transition: top 1ms linear, opacity 0.5s linear;
+            left: 50%;
+            top: 50%;
+            opacity: 1;
+        }
+    }
+    &__aopriisk {
+        background: url(./img/kolali.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 4.3%;
+        aspect-ratio: 1/1;
+        top:65%;
+        left: 50%;
+        &  .popup__content_active{
+            transition: top 1ms linear, opacity 0.5s linear;
+            left: 50%;
+            top: 50%;
+            opacity: 1;
+        }
+    }
+    &__rusburmash {
+        background: url(./img/kolali.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 4.3%;
+        aspect-ratio: 1/1;
+        top:76%;
+        left: 69.18%;
+        &  .popup__content{
+            right: 1000vh;
+            left: auto;
+        } 
+        &  .popup__content_active{
+            transition: top 1ms linear, opacity 0.5s linear;
+            right: 50%;
+            top: 50%;
+            opacity: 1;
+        } 
+    }
+    &__hork {
+        background: url(./img/kolali.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 4.3%;
+        aspect-ratio: 1/1;
+        top:51%;
+        left: 81%;
+        &  .popup__content{
+            right: 1000vh;
+            left: auto;
+        } 
+        &  .popup__content_active{
+            transition: top 1ms linear, opacity 0.5s linear;
+            right: 50%;
+            top: 50%;
+            opacity: 1;
+        }
+    }
+    &__uran {
+        background: url(./img/Асasphalt.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 6.7%;
+        aspect-ratio: 1/1;
+        top:30.5%;
+        left: 86%;
+        &  .popup__content{
+            right: 1000vh;
+            left: auto;
+        } 
+        &  .popup__content_active{
+            transition: top 1ms linear, opacity 0.5s linear;
+            right: 50%;
+            top: 50%;
+            opacity: 1;
+        }
+    }
+    &__sarilah {
+        background: url(./img/dikson.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 10.3%;
+        aspect-ratio: 1/1;
+        top:33%;
+        left: 76%;
+        &  .popup__content{
+            right: 1000vh;
+            left: auto;
+        } 
+        &  .popup__content_active{
+            transition: top 1ms linear, opacity 0.5s linear;
+            right: 50%;
+            top: 50%;
+            opacity: 1;
+        }
+    }
+    &__partners {
+        display: flex;
+        flex-direction: column;
+        gap:3.5em;
+        width: 100%;
+        @include adaptiv-font(24, 10);
+        margin-top: 3.33em;
+        margin-bottom: 6.29em;
+        &_pc{
+         @media (max-width: 768px){   
+            display: none;
+            }    
+        }
+       &_mobile{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        @media (min-width: 769px){ 
+            display: none;
+            } 
+       }
+
+
+        
+        &__line1 {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        &__line2 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        &__line3 {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        &_logo {
+            flex: 0 0  auto;
+            object-fit: contain;
+            max-width: 18%;
+            @media (max-width: 768px){ 
+                max-width: 40%;
+                object-fit: contain;
+                } 
+        }
+    }
+    &__accordion{
+        width: 100%; 
+        padding: 20px 15px 20px 15px;
+        cursor: pointer;
+        &_title{
+            @include adaptiv-font(28, 2); 
+        font-weight: 700; 
+        padding-bottom: 2px;
+        cursor: pointer;
+        @media (max-width: 768px){
+            @include adaptiv-font(40, 16);
+        }
+        } 
+        &_subtitle{
+            font-weight: 400; 
+            border-bottom: 1px solid #999999; 
+            padding-bottom: 15px; 
+            @include adaptiv-font(20, 2);
+            @media (max-width: 768px){
+                @include adaptiv-font(30, 12);
+            }
+            line-height: 1.5em;
+            & span {
+                display: block;
+            margin: 10px 0;
+            }
+        }
+       &_list{
+        transition: max-height 0.5s cubic-bezier(0, 1, 0, 1); 
+        overflow: hidden;
+        max-height: 0;
+        & li{ 
+            list-style-type: disc; 
+            list-style-position:outside; 
+            margin-left: 20px; 
+            @include adaptiv-font(20, 2);
+            line-height: 1.5em;
+            margin-top: 15px;
+            @media (max-width: 768px){
+                @include adaptiv-font(30, 12);
+            }
+         &::marker { 
+     color: #3CD1C2; 
+     font-size: 18px; 
+    }    }
+     }  
+      &_active{
+        transition: max-height 2s linear; 
+        max-height: 1500px;
+    }
+     }
+}

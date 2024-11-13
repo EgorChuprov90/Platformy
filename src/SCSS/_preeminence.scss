@@ -1,0 +1,70 @@
+
+.preeminence{
+    min-height: 690px;
+    @include adaptiv-font(50, 30);
+    padding-top: 2em;
+    margin-top: 2em;
+    padding-bottom: 1.75em;
+    background: url('./img/preeminence.png') no-repeat;
+    background-size: cover;
+        &__title{
+            font-weight: 700;
+            @include adaptiv-font(45, 35);  
+            color: #ffffff;
+            padding-bottom: 1.8em;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            @media (max-width: 1024px){   
+                @include adaptiv-font(45, 25);
+            }
+        } 
+    &__list{
+        display: flex;
+        gap: 35px;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media  (max-width: 1200px){
+        flex-wrap: wrap;
+        justify-content: center;
+          }
+    }
+    &__card{
+        background: #ffffff;
+    max-width: 345px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 25px;
+    padding-bottom: 40px;
+    min-height: 321px;
+    cursor: pointer;
+    min-width: 170px;
+    @media  (min-width: 2080px){
+        min-height: 366px;
+          }
+    &_tittle{
+        margin-top: 2.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include adaptiv-font(20, 10);
+        @media  (max-width: 1024px){
+            @include adaptiv-font(24, 16);
+              }
+        gap: 0.75em;
+        font-weight: 500;
+        line-height: 1.5em; 
+    }
+    &_arrow{
+        object-fit: none;
+    }
+    &_text{  
+        @include adaptiv-font(14, 5);
+        line-height: 1.5em; 
+        margin-top: 1em;
+        @media  (max-width: 1024px){
+            @include adaptiv-font(16, 10);
+              }
+    }
+} 
+}

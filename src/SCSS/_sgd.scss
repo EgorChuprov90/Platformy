@@ -1,0 +1,156 @@
+.sgd{
+    &__title{
+        display: flex;
+        align-items: center;
+        gap: 0.9em;
+        margin: 3em 0 1em;
+        @include adaptiv-font(45, 10);
+        text-transform: uppercase;
+        color: #008082;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        @media (max-width: 768px){   
+            @include adaptiv-font(45, 16);
+        }
+        & img{
+            height: 0.6em;
+        }
+    }
+    &__subtitle{
+        font-weight: 600;
+        @include adaptiv-font(24, 10);
+        line-height: 1.1em;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid #3CD1C2;
+    }
+    &__tech{
+        display: flex;
+        align-items: flex-start;
+        gap: 5%;
+        justify-content: center;
+        margin-top: 5em;
+        @media (max-width: 768px){
+            flex-direction: column-reverse;
+        }
+        &_img{
+            width: 60%;
+            @media (max-width: 768px){
+                width: 100%;
+            }
+        }
+        &_title{
+            @include adaptiv-font(20, 1);  
+            font-weight: 700; 
+            margin: 3em 0;
+            @media (max-width: 768px){
+                @include adaptiv-font(36, 16);   
+            }
+        }
+        &_list{
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3em;
+            gap: 3em;
+            @include adaptiv-font(16, 1);
+            @media (max-width: 768px){
+                @include adaptiv-font(26, 14); 
+                gap: 1.5em;
+
+            }
+        }
+        &_item{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            & p:first-child{
+                @include adaptiv-font(30, 1);
+                font-weight: 500;
+                color: #3CD1C2;
+                align-self: flex-start;
+                @media (max-width: 768px){
+                    @include adaptiv-font(70, 40);  
+                    align-self: center;
+                }
+            }
+        }
+    }
+    &__conditions{
+        display: flex;
+        align-items: flex-start;
+        gap: 5%;
+        margin-top: 5em;
+        @media (max-width: 768px){
+            flex-direction: column;
+        }
+        &_img{
+            width: 60%;
+            @media (max-width: 768px){
+                width: 100%;
+            }
+        }
+        &_title{
+            @include adaptiv-font(20, 1);  
+            font-weight: 700; 
+            margin: 3em 0;
+            @media (max-width: 768px){
+                @include adaptiv-font(36, 16);   
+            }
+
+        }
+        &_list{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            @include adaptiv-font(16, 1);
+            @media (max-width: 768px){
+                @include adaptiv-font(26, 14); 
+                gap: 1.5em;
+
+            }
+        }
+        &_item{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            & p:first-child{
+                @include adaptiv-font(30, 10);
+                font-weight: 500;
+                color: #3CD1C2;
+                align-self: flex-start;
+            }
+        }
+    }
+    &__principle{
+        &_title{
+            width: 100%;
+            text-align: center;
+            margin: 3em 0;
+            @include adaptiv-font(20, 1);
+            font-weight: 700; 
+            @media (max-width: 768px){
+                @include adaptiv-font(36, 16);
+                & span{
+                    white-space: nowrap  
+                }   
+            }
+        }
+        &_img{
+            width: 100%;
+            object-fit: contain;
+            @include adaptiv-font(20, 1);
+            margin-bottom: 10em;
+            @media (max-width: 768px){
+                display: none;
+            }
+        }
+        &_mobile{
+            display: none;
+            @media (max-width: 768px){
+                display: block;
+                width: 100%;
+                max-width: 450px;
+                margin: 30px auto 60px;
+            }
+        }
+    }
+}

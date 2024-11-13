@@ -1,0 +1,205 @@
+.mountain{
+  flex: 1 0 auto;
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    height: 70vh;
+    max-height: 650px;
+    background: url(./img/mountain.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (max-width: 1024px){
+      height: 50vw;
+  }
+}
+
+.about{
+position: relative;
+padding-top: 2em;
+@include adaptiv-font(50, 20);
+
+    &__title{
+      font-weight: 700;
+      @include adaptiv-font(45, 35);  
+      color: #008081;
+      width: 100%;
+      text-align: left;
+      text-transform: uppercase;
+      @media (max-width: 1024px){
+        @include adaptiv-font(40, 24);
+    }
+    }
+    & .container::before{
+        content: '';
+        position: absolute;
+        display: block;
+        background: url(./img/arrowBur.png) no-repeat;
+        background-size: contain;
+        width: 290px;
+        height: 50vh;
+        max-height: 600px;
+        top: 0px;
+        right: 110px;
+        @media (max-width: 1024px){
+          display: none;
+      }
+    }
+    &__text{
+        max-width: 50%;
+        height: 70vh;
+        max-height: 700px;
+        @media (max-width: 1024px){
+          max-width: 100%;
+          height: max-content;
+          max-height: none;
+      }
+    }
+    &__history{
+        border-left:2px solid #3CD1C2;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.7em;
+        margin: 3.1em 0 2.5em;
+        line-height: 1.6em;
+        font-weight: 300;
+        @include adaptiv-font(16, 4);
+
+        @media (max-width: 1024px){
+          @include adaptiv-font(28, 14);
+          max-width: 100%;
+          border-left:0px solid #3CD1C2;
+          padding-left: 0;
+      }
+    }
+}
+
+.advantages{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto auto 1fr;
+    @include adaptiv-font(20, 14); 
+    gap: 4em 0px; 
+    grid-template-areas: 
+      "purpose . idea"
+      "title title title"
+      "vector vector vector";
+      @media (max-width: 1024px){
+          display: flex;
+          flex-direction: column;
+          margin-top: 2.5em;
+    }
+      &__purpose{
+        grid-area: purpose;
+        justify-self: start; 
+        align-self: start; 
+      }
+      &__idea{
+        grid-area: idea; 
+        justify-self: end; 
+        align-self: start; 
+      }
+      &__title{
+        grid-area: title; 
+        justify-self: center; 
+        align-self: center;
+        font-weight: 700;
+        @include adaptiv-font(24, 14);
+        @media (max-width: 1024px){
+          @include adaptiv-font(45, 25);
+      }        
+      }
+      &__vector{
+        grid-area: vector;
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        @include adaptiv-font(20, 10);
+        @media (max-width: 1024px){
+          flex-direction: column;
+    }
+      }
+}
+
+
+.vector__card{
+    flex: 0 1 320px;
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    @media (max-width: 1024px){
+      flex: 0 1 auto;
+      flex-direction: row;
+      max-width: none;
+      align-items: center;
+}
+}
+
+.card{
+    &__number{
+        object-fit: contain;
+        width: 100%;
+        margin-bottom: 12px;
+        &_mobile{
+          display: none;
+        }
+        @include adaptiv-font(16, 10);
+        @media (max-width: 1024px){
+          &_mobile{
+            display: block;
+            margin-right: 1.5em
+          }
+          &_pc{
+            display: none;
+          }
+          width: 5em;
+          margin: 0;
+    }
+    }
+    &__text{
+        min-height: 80px;
+        line-height: 1.8em;
+        font-weight: 300;
+        @include adaptiv-font(16, 8);
+        @media (max-width: 1024px){
+          transform: translateY(25%);
+          width: 70%;
+          @include adaptiv-font(26, 10);
+    }
+    }
+}
+
+.target {
+    display: grid; 
+    max-width: 630px;
+    grid-template-columns: 50px auto auto ; 
+    grid-template-rows: max-content max-content; 
+    gap: 20px 12px; 
+    grid-template-areas: 
+      "target___logo target__title target__title"
+      "target__text target__text target__text"; 
+      @media (max-width: 1024px){
+        margin: 0 auto;
+    }
+      &___logo { 
+        grid-area: target___logo;
+     }
+     &__title { 
+        grid-area: target__title; 
+        align-self: center;
+        @include adaptiv-font(24, 8);
+        font-weight: 700;
+        @media (max-width: 1024px){
+        @include adaptiv-font(45, 16);
+    }
+     }
+     &__text { 
+        grid-area: target__text;
+        @include adaptiv-font(16, 12);
+        font-weight: 300;
+        line-height: 1.5em;
+        @media (max-width: 1024px){
+          @include adaptiv-font(16, 16);
+      }
+     }
+  }

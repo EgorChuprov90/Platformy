@@ -1,0 +1,660 @@
+.preview{
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+        margin-top: -7.5rem;
+    padding-top: 7.5rem;
+    @media (max-width: 1024px){
+      height: 75vmax;
+       
+    }
+    
+    -webkit-animation-name: bgcolor;
+    -webkit-animation-duration: 30s;
+    animation-name: bgcolor;
+    animation-duration: 40s;
+    transition: 0s;
+    animation-iteration-count: infinite;
+}
+
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    color: white;
+    
+    margin-top: 7.5rem;
+    text-transform: uppercase;
+&__name {
+    text-align: center;
+    @include adaptiv-font(20, 10);
+    font-weight: 400;
+    line-height: 1.25em;
+    letter-spacing: 0.14em;
+    @media (max-width: 1024px){
+      @include adaptiv-font(20, 14); 
+    }
+}
+&__about {
+    text-align: center;
+    @include adaptiv-font(92, 5);
+    font-weight: 800;
+    line-height: 1em;
+    letter-spacing: 0.2em;
+    @media (max-width: 768px){
+      @include adaptiv-font(70, 45); 
+    }
+}
+&__direction{
+    text-align: center;
+    @include adaptiv-font(92, 5);
+    font-weight: 300;
+    line-height: 1em;
+    margin-top: 0.37em;
+    letter-spacing: 0.2em;
+    position: relative;
+    @media (max-width: 1024px){
+      @include adaptiv-font(80, 40);
+    }
+    @media (max-width: 768px){
+      width: min-content; 
+    }
+    & span{
+      @media (max-width: 768px){
+      letter-spacing: 0.32em;
+       
+    } 
+    }
+  
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -25%;
+        transform: translate(-50%, -25%);
+        width: 50%;
+        height: 4px;
+        border-radius: 25px;
+        background-color: #38F5C8;
+        @media (max-width: 768px){
+          width: 100%; 
+        }
+    }
+}
+&__more {
+    display: inline-block;
+    background-color: #3CD1C2;
+    border-radius: 25px;
+    color: #FFFFFF;
+    @include adaptiv-font(16, 4);
+    font-weight: 500;
+    min-width: 285px;
+    padding: 20px 90px 20px 90px;
+    margin-top:7rem;
+    @media (max-width: 768px){
+      display: none;
+    }
+}
+}
+.pip{
+  position: relative;
+  margin-top: 2.25em;
+}
+.land{
+  -webkit-animation-name: textland;
+  -webkit-animation-duration: 30s;
+  animation-name: textland;
+  animation-duration: 40s;
+  transition: 0s;
+  animation-iteration-count: infinite;
+}
+.sea{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  opacity: 0;
+  -webkit-animation-name: textsea;
+  -webkit-animation-duration: 30s;
+  animation-name: textsea;
+  animation-duration: 40s;
+  transition: 0s;
+  animation-iteration-count: infinite;
+}
+  
+@-webkit-keyframes textsea {
+  0% {
+    opacity: 0;
+    }
+    5% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+    }
+  15% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+      }
+      30% {
+        opacity: 0;
+      }
+      35% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 0;
+      }
+      45% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 1;
+      }
+    55% {
+        opacity: 1;
+        }
+        60% {
+          opacity: 0;
+        }
+        65% {
+          opacity: 0;
+        }
+      70% {
+          opacity: 0;
+        }
+        75% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 1;
+          }
+          85% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 0;
+          }
+          95% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 0;
+          }
+}
+
+@keyframes textsea {
+  0% {
+    opacity: 0;
+    }
+    5% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+    }
+  15% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+      }
+      30% {
+        opacity: 0;
+      }
+      35% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 0;
+      }
+      45% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 1;
+      }
+    55% {
+        opacity: 1;
+        }
+        60% {
+          opacity: 0;
+        }
+        65% {
+          opacity: 0;
+        }
+      70% {
+          opacity: 0;
+        }
+        75% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 1;
+          }
+          85% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 0;
+          }
+          95% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 0;
+          }
+  }
+  
+  @-webkit-keyframes textland {
+    0% {
+      opacity: 1;
+      }
+      5% {
+        opacity: 1;
+      }
+      10% {
+        opacity: 1;
+      }
+    15% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 0;
+        }
+        30% {
+          opacity: 1;
+        }
+        35% {
+          opacity: 1;
+        }
+        40% {
+          opacity: 1;
+        }
+        45% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0;
+        }
+      55% {
+          opacity: 0;
+          }
+          60% {
+            opacity: 1;
+          }
+          65% {
+            opacity: 1;
+          }
+        70% {
+            opacity: 1;
+          }
+          75% {
+            opacity: 0;
+          }
+          80% {
+            opacity: 0;
+            }
+            85% {
+              opacity: 0;
+            }
+            90% {
+              opacity: 1;
+            }
+            95% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 1;
+            }
+  }
+  
+  @keyframes textland {
+    0% {
+      opacity: 1;
+      }
+      5% {
+        opacity: 1;
+      }
+      10% {
+        opacity: 1;
+      }
+    15% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 0;
+        }
+        30% {
+          opacity: 1;
+        }
+        35% {
+          opacity: 1;
+        }
+        40% {
+          opacity: 1;
+        }
+        45% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0;
+        }
+      55% {
+          opacity: 0;
+          }
+          60% {
+            opacity: 1;
+          }
+          65% {
+            opacity: 1;
+          }
+        70% {
+            opacity: 1;
+          }
+          75% {
+            opacity: 0;
+          }
+          80% {
+            opacity: 0;
+            }
+            85% {
+              opacity: 0;
+            }
+            90% {
+              opacity: 1;
+            }
+            95% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 1;
+            }
+    }
+    
+
+
+
+@-webkit-keyframes bgcolor {
+  0% {
+    background: url("./img/previewBg.png") right bottom no-repeat;
+  }
+  5% {
+    background: url("./img/previewBg.png") right bottom no-repeat;
+  }
+  10% {
+    background: url("./img/previewBg.png") right bottom no-repeat;
+  }
+  15% {
+    background: url("./img/previewBg2.png") right bottom no-repeat;
+  }
+  20% {
+    background: url("./img/previewBg2.png") right bottom no-repeat;
+  }
+  25% {
+    background: url("./img/previewBg2.png") right bottom no-repeat;
+  }
+  30% {
+    background: url("./img/previewBg.png") right bottom no-repeat;
+  }
+  35% {
+    background: url("./img/previewBg.png") right bottom no-repeat;
+  }
+  40% {
+    background: url("./img/previewBg.png") right bottom no-repeat;
+  }
+  45% {
+    background: url("./img/previewBg2.png") right bottom no-repeat;
+  }
+  50% {
+    background: url("./img/previewBg2.png") right bottom no-repeat;
+  }
+  55% {
+    background: url("./img/previewBg2.png") right bottom no-repeat;
+  }
+  60% {
+    background: url("./img/previewBg.png") right bottom no-repeat;
+  }
+  65% {
+    background: url("./img/previewBg.png") right bottom no-repeat;
+  }
+  70% {
+    background: url("./img/previewBg.png") right bottom no-repeat;
+  }
+  75% {
+    background: url("./img/previewBg2.png") right bottom no-repeat;
+  }
+  80% {
+    background: url("./img/previewBg2.png") right bottom no-repeat;
+  }
+  85% {
+    background: url("./img/previewBg2.png") right bottom no-repeat;
+  }
+  90% {
+    background: url("./img/previewBg.png") right bottom no-repeat;
+  }
+  95% {
+    background: url("./img/previewBg.png") right bottom no-repeat;
+  }
+  100% {
+    background: url("./img/previewBg.png") right bottom no-repeat;
+  }
+  }
+  
+  @keyframes bgcolor {
+    0% {
+      background: url("./img/previewBg.png") right bottom no-repeat;
+    }
+    5% {
+      background: url("./img/previewBg.png") right bottom no-repeat;
+    }
+    10% {
+      background: url("./img/previewBg.png") right bottom no-repeat;
+    }
+    15% {
+      background: url("./img/previewBg2.png") right bottom no-repeat;
+    }
+    20% {
+      background: url("./img/previewBg2.png") right bottom no-repeat;
+    }
+    25% {
+      background: url("./img/previewBg2.png") right bottom no-repeat;
+    }
+    30% {
+      background: url("./img/previewBg.png") right bottom no-repeat;
+    }
+    35% {
+      background: url("./img/previewBg.png") right bottom no-repeat;
+    }
+    40% {
+      background: url("./img/previewBg.png") right bottom no-repeat;
+    }
+    45% {
+      background: url("./img/previewBg2.png") right bottom no-repeat;
+    }
+    50% {
+      background: url("./img/previewBg2.png") right bottom no-repeat;
+    }
+    55% {
+      background: url("./img/previewBg2.png") right bottom no-repeat;
+    }
+    60% {
+      background: url("./img/previewBg.png") right bottom no-repeat;
+    }
+    65% {
+      background: url("./img/previewBg.png") right bottom no-repeat;
+    }
+    70% {
+      background: url("./img/previewBg.png") right bottom no-repeat;
+    }
+    75% {
+      background: url("./img/previewBg2.png") right bottom no-repeat;
+    }
+    80% {
+      background: url("./img/previewBg2.png") right bottom no-repeat;
+    }
+    85% {
+      background: url("./img/previewBg2.png") right bottom no-repeat;
+    }
+    90% {
+      background: url("./img/previewBg.png") right bottom no-repeat;
+    }
+    95% {
+      background: url("./img/previewBg.png") right bottom no-repeat;
+    }
+    100% {
+      background: url("./img/previewBg.png") right bottom no-repeat;
+    }
+    }
+
+    @media (max-width: 768px){
+      @-webkit-keyframes bgcolor {
+        0% {
+          background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          background-size: 100vh;
+        }
+        5% {
+          background: url("./img/previewBgM.png") 75% bottom no-repeat;
+        }
+        10% {
+          background: url("./img/previewBgM.png") 75% bottom no-repeat;
+        }
+        15% {
+          background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+        }
+        20% {
+          background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+        }
+        25% {
+          background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+        }
+        30% {
+          background: url("./img/previewBgM.png") 75% bottom no-repeat;
+        }
+        35% {
+          background: url("./img/previewBgM.png") 75% bottom no-repeat;
+        }
+        40% {
+          background: url("./img/previewBgM.png") 75% bottom no-repeat;
+        }
+        45% {
+          background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+        }
+        50% {
+          background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+        }
+        55% {
+          background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+        }
+        60% {
+          background: url("./img/previewBgM.png") 75% bottom no-repeat;
+        }
+        65% {
+          background: url("./img/previewBgM.png") 75% bottom no-repeat;
+        }
+        70% {
+          background: url("./img/previewBgM.png") 75% bottom no-repeat;
+        }
+        75% {
+          background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+        }
+        80% {
+          background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+        }
+        85% {
+          background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+        }
+        90% {
+          background: url("./img/previewBgM.png") 75% bottom no-repeat;
+        }
+        95% {
+          background: url("./img/previewBgM.png") 75% bottom no-repeat;
+        }
+        100% {
+          background: url("./img/previewBgM.png") 75% bottom no-repeat;
+        }
+        }
+        
+        @keyframes bgcolor {
+          0% {
+            background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          }
+          5% {
+            background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          }
+          10% {
+            background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          }
+          15% {
+            background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+          }
+          20% {
+            background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+          }
+          25% {
+            background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+          }
+          30% {
+            background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          }
+          35% {
+            background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          }
+          40% {
+            background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          }
+          45% {
+            background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+          }
+          50% {
+            background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+          }
+          55% {
+            background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+          }
+          60% {
+            background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          }
+          65% {
+            background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          }
+          70% {
+            background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          }
+          75% {
+            background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+          }
+          80% {
+            background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+          }
+          85% {
+            background: url("./img/previewBgM2.png") 75% bottom no-repeat;
+          }
+          90% {
+            background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          }
+          95% {
+            background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          }
+          100% {
+            background: url("./img/previewBgM.png") 75% bottom no-repeat;
+          }
+          }
+    }

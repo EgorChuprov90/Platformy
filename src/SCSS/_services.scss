@@ -1,0 +1,85 @@
+.services{
+    background: url(./img/servicesBG.png) no-repeat;
+    background-size: cover;
+    background-position: top right;
+    margin-top: -7.5rem;
+    padding-top: 7.5rem;
+    width: 100vw;
+    color: #ffffff;
+    flex: 1 0 auto;
+    @media (max-width: 1024px){
+        background: url(./img/servicesBGM.png) no-repeat;
+        background-position: 75%;
+        background-size: cover;
+        }
+        @media (max-width: 767px){
+            background-size: 150vmax;
+            background-position: 75% -20vmax;
+            }
+    &__title{
+        margin: 3em 0 1em;
+        @include adaptiv-font(45, 10);
+        text-transform: uppercase;
+        color: #ffffff;
+        letter-spacing: 0.08em;
+        @media (max-width: 1024px){
+            @include adaptiv-font(45, 25);
+        }
+    }
+    &__text{
+        max-width: 50%;
+        width: max-content;
+        line-height: 1.5em;
+        @include adaptiv-font(16, 5);
+        margin-bottom: 30em;
+        @media (max-width: 1024px){
+            @include adaptiv-font(24, 14);
+            max-width: 100%;
+        }
+        & p:first-child{
+            margin-bottom: 1.5em;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20vh;
+        @media (max-width: 767px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em       
+        }
+    }
+    &__card{
+        flex: 0 0 30%;
+        max-width: 455px;
+        color: #ffffff;
+        @media (max-width: 767px){
+            width: 80%;       
+            }
+        &:visited{
+            color: #ffffff;
+        }
+        &_text{
+        background: #008082;
+        display: flex;
+        align-items: center;
+        padding: 2em 40px;
+        @include adaptiv-font(24, 1);
+        @media (max-width: 1024px){
+            @include adaptiv-font(20, 12);     
+            }
+    }
+        &_arrow{
+            flex: 0 0 20px;
+            height: 23px;
+        }
+        &_title{
+        margin-right: auto;
+        font-weight: 700;
+    }  
+    }
+
+}

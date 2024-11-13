@@ -1,0 +1,151 @@
+.technic{
+    margin-top: -7.5rem;
+    flex: 1 0 auto;
+    &__about{
+        background: url(./img/technic.png) no-repeat;
+        background-position: top right;
+        padding-top: 7.5rem;
+        background-size: cover;
+        height: 75vh;
+        position: relative;
+        @media (max-width: 768px){   
+            background-position: 80% 50%;
+            height: 70vmax;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 95%;
+            background:
+            linear-gradient(90deg, rgba(0,128,129,1) 0%, rgba(0,128,129,0.47) 60%, rgba(0,128,129,0.1) 80%),
+            linear-gradient(90deg, rgba(0,128,129,1) 5%, rgba(0,128,129,0.47) 49%, rgba(0,128,129,0.1) 89%),
+            linear-gradient(90deg, rgba(0,128,129,1) 0%, rgba(0,128,129,0.47) 36%, rgba(0,128,129,0.1) 75%);
+            border-radius: 0 0 50px 0;
+            opacity: 0.95;
+            z-index: 1;
+            backdrop-filter: blur(13px);
+            -webkit-backdrop-filter: blur(13px);
+            @media (max-width: 768px){   
+                width: 70%;
+                }
+        }
+
+            &_title{
+                margin: 3em 0 1em;
+                @include adaptiv-font(45, 10);
+                text-transform: uppercase;
+                color: #ffffff;
+                z-index: 1;
+                position: relative;
+                letter-spacing: 0.08em;               
+                @media (max-width: 768px){   
+                @include adaptiv-font(45, 25);
+                    }
+        }
+            &_text{
+                width: 50%;
+                z-index: 1;
+                position: relative;
+                @include adaptiv-font(17, 5);
+                line-height: 1.7em;
+                color: #ffffff;
+                @media (max-width: 768px){   
+                    @include adaptiv-font(20, 10);
+                    width: 70%;
+                    }
+                &:nth-child(2){
+                    margin-bottom: 1.5em;
+            }
+    }
+    }
+    &__tech{
+        display: flex;
+        flex-direction: column;
+        gap:100px;
+        padding: 100px 0;
+        @media (max-width: 768px){ 
+            gap:20px;
+            padding: 50px 0;
+          }
+    }
+    &__card{
+        flex: 0 0 350px;
+        background: #ffffff;
+        padding: 20px 23px;
+        height: 475px;
+        position: relative;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        @media (max-width: 768px){ 
+            flex: 0 0 450px;  
+            width: 300px;
+            margin: 0 auto;
+        }
+        &_count{
+            position: absolute;
+            right: 23px;
+            bottom: 20px;
+            background: #3CD1C2;
+            padding: 0 15px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 25px;
+            color: #ffffff;
+            border-radius: 50px;
+        }
+        &_title{
+            margin-top: 30px;
+        }
+        &_subtitle{
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            @media (max-width: 768px){ 
+                line-height: 1.5em;
+                font-size: 16px;
+              }
+        }
+        &_text{
+            font-size: 16px;
+            line-height: 26px;
+           @media (max-width: 768px){ 
+              line-height: 1.5em;
+              font-size: 14px;
+            }
+        }
+        &_img{
+            width: 306px;
+        }
+    }
+    &__accordion{
+        &_list{
+            display: flex;
+            gap: 20px;
+            justify-content: flex-start;
+            align-items: stretch;
+            margin-top: 60px;
+            flex-wrap: wrap;
+            @media (max-width: 768px){   
+                flex-direction: column;
+            }
+        }
+        &_title{
+            width: 100%;
+            border-bottom: solid 1px#3CD1C2;
+            padding: 0 20px 20px 20px; 
+            display: flex;
+            justify-content: space-between;
+            @include adaptiv-font(24, 14); 
+            font-weight: bold;
+            cursor: pointer;
+            @media (max-width: 768px){   
+                padding: 0 15px 15px 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.certificates{
+    padding: 2.45em 0;
+    @include adaptiv-font(45, 35);
+    background: url('./img/certificates.png') no-repeat;
+    background-size: cover;
+    &__title{
+        font-weight: 700;
+        @include adaptiv-font(45, 35);  
+        color: #ffffff;
+        padding-bottom: 1.77em;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        @media (max-width: 1024px){   
+            @include adaptiv-font(45, 25);
+        }
+    } 
+    &__list{
+        display: flex;
+        gap: 25px;
+        justify-content: space-between;
+        align-items: stretch;
+        @media  (max-width: 1200px){
+        flex-wrap: wrap;
+        justify-content: center;
+          }
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 345px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        border-radius: 25px;
+        width: 24%;
+        @media  (max-width: 1200px){
+            width: 100%;
+              }
+        &_img{
+            padding: 30px;
+            margin-bottom: 40px;
+            object-fit: contain;
+        }
+        &_text{
+            padding: 20px 25px 25px;
+            background-color: #ffffff;
+            height: 100%;
+            border-radius: 0 0 25px 25px;
+            @include adaptiv-font(14, 10);
+            line-height: 1.5em;
+            @media  (max-width: 1200px){
+                @include adaptiv-font(18, 12);
+                  }
+        }
+    } 
+}  

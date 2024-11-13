@@ -1,0 +1,132 @@
+.marine{
+    & .slick_prev{
+         background: url(./img/test/arrowPrev.png) no-repeat;
+         background-size: contain;
+         width: 78px;
+         height: 50px;
+         position: absolute;
+         top: 50%;
+         left: 2%;
+         z-index: 999;
+         @media (max-width: 768px){   
+            display: none;
+        }
+         }
+        & .slick_next{
+             background: url(./img/test/arrowNext.png) no-repeat;
+             background-size: contain;
+             width: 78px;
+             height: 50px;
+             position: absolute;
+             top: 50%;
+             right: 2%;
+             z-index: 99;
+             @media (max-width: 768px){   
+                display: none;
+            }
+         }
+        & .slick-dots{
+             display: flex !important;
+             gap:1% !important;
+             left: 50%;
+             bottom: -10% !important;
+             transform: translateX(-50%);
+             @media (max-width: 767px){   
+                bottom: -40px !important;
+            }
+         }
+        & .slick-dots li{
+             width: 20% !important;
+             flex: 0 1 33% !important;
+         
+         }
+        & .slick-dots button:before{
+             background: #008081;
+             border-radius: 25px;
+             height: 4px !important;
+             width: 100% !important;
+             font-size: 0 !important;
+             
+         }
+        & .slick-slide img{
+             width: 100% !important;
+             object-fit: cover;
+         }
+     background: #FAFAFA;
+     flex: 1 0 auto;
+     &__slider{
+         position: relative;
+         width: 50%;
+         @media (max-width: 768px){   
+            width: 100%;
+        }
+     }
+     &__title{
+         display: flex;
+         align-items: center;
+         gap: 0.9em;
+         margin: 3em 0 1em;
+         @include adaptiv-font(45, 10);
+         text-transform: uppercase;
+         color: #008082;
+         font-weight: 700;
+         letter-spacing: 0.08em;
+         @media (max-width: 768px){   
+            @include adaptiv-font(45, 16);
+        }
+         & img{
+             height: 0.6em;
+         }
+     }
+     &__subtitle{
+         font-weight: 600;
+         @include adaptiv-font(24, 10);
+         line-height: 1.1em;
+         padding-bottom: 0.5em;
+         border-bottom: 2px solid #3CD1C2;
+         @media (max-width: 768px){   
+            display: none;
+            @include adaptiv-font(32, 18);
+            margin-top: 4em;
+        }
+        &_mobile{
+            display: none;
+            @media (max-width: 768px){   
+                display: block;
+                width: 100%;
+                order: 2;
+                border: 0;
+            }
+        }
+     }
+     &__conditions{
+         display: flex;
+         align-items: flex-start;
+         gap: 5%;
+         margin: 5em 0 10em;
+         @include adaptiv-font(16, 1);
+         @media (max-width: 768px){   
+            flex-direction: column;
+
+        }
+         &_list{
+             display: flex;
+             flex-direction: column;
+             gap: 1.8em;
+             @include adaptiv-font(16, 1);
+             @media (max-width: 768px){
+                margin: 3em 0 6em;
+                width: 100%;
+                order: 3;
+                @include adaptiv-font(25, 10);
+                padding: 0 10px;
+            }
+         }
+         &_item{
+             display: flex;
+             gap: 20px;
+             align-items: flex-start;
+             line-height: 1.4em;
+         }
+     }
+ }

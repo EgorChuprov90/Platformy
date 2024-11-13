@@ -1,0 +1,89 @@
+.contacts{
+    margin-top: -7.5rem;
+    padding-top: 7.5rem;
+background: #FAFAFA;
+flex: 1 0 auto;
+    &__title{
+        margin: 3em 0 1em;
+        @include adaptiv-font(45, 10);
+        text-transform: uppercase;
+        position: relative;
+        color: #008082;
+        letter-spacing: 0.08em;
+        @media (max-width: 768px){   
+            @include adaptiv-font(45, 25);
+            width: 100%;
+            border-bottom: 1px solid #999999;
+            height: 2em;
+        }
+        &::before{
+            content: '';
+            width: 100vw;
+            height: 1px;
+            background-color: #999999;
+            position: absolute;
+            bottom: -1.2em;
+            left: -200px;
+            @media (max-width: 768px){   
+                display: none;
+            }
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        @include adaptiv-font(16, 4);
+        margin-top: 10em;
+        max-width: 35%;
+        padding-bottom: 10em;
+        @media (max-width: 768px){   
+            width: 75%;
+            @include adaptiv-font(30, 12);
+            max-width: none;
+            margin-top: 3em;
+
+        }
+    }
+    & .container{
+        position: relative;
+        @media (max-width: 768px){   
+            display: flex;
+            flex-direction: column;
+            position: static;
+        }
+    }
+    &__map{
+        position: absolute;
+        bottom: 0;
+        right: -5%;
+        height: 120%;
+        max-width: 60%;
+        @media (max-width: 768px){
+            display: none;
+        }
+        &_mobile{
+            display: none;
+            @media (max-width: 768px){
+                display: block;
+                object-fit: cover;
+                width: 100vw;
+                height: 70vmax;
+            }
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+
+    &__text{
+        color: #000000;
+     & a:visited{
+        color: #000000;
+    }   
+    } 
+}
