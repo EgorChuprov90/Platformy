@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Platformy/static/css/main.8431d3f7.css",
-    "main.js": "/Platformy/static/js/main.8ca12706.js",
+    "main.css": "/Platformy/static/css/main.ffa5a45b.css",
+    "main.js": "/Platformy/static/js/main.b5db4bda.js",
     "static/js/453.6c325da6.chunk.js": "/Platformy/static/js/453.6c325da6.chunk.js",
-    "static/media/previewBg2.png": "/Platformy/static/media/previewBg2.204760786971d369afd1.png",
-    "static/media/previewBg.png": "/Platformy/static/media/previewBg.2dafcf4660929cf1dea8.png",
+    "static/media/previewBg.png": "/Platformy/static/media/previewBg.e27b8182c8944cb42c48.png",
+    "static/media/previewBg2.png": "/Platformy/static/media/previewBg2.515f5ecc3ee15c5d4aa6.png",
     "static/media/servicesBG.png": "/Platformy/static/media/servicesBG.282469bd3e9047f7544e.png",
     "static/media/technic.png": "/Platformy/static/media/technic.7cb03a9fc54ec6566127.png",
     "static/media/mountain.png": "/Platformy/static/media/mountain.96e2bfb7d337b1ce57fe.png",
@@ -48,12 +48,12 @@
     "static/media/slick.ttf": "/Platformy/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Platformy/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Platformy/index.html",
-    "main.8431d3f7.css.map": "/Platformy/static/css/main.8431d3f7.css.map",
-    "main.8ca12706.js.map": "/Platformy/static/js/main.8ca12706.js.map",
+    "main.ffa5a45b.css.map": "/Platformy/static/css/main.ffa5a45b.css.map",
+    "main.b5db4bda.js.map": "/Platformy/static/js/main.b5db4bda.js.map",
     "453.6c325da6.chunk.js.map": "/Platformy/static/js/453.6c325da6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8431d3f7.css",
-    "static/js/main.8ca12706.js"
+    "static/css/main.ffa5a45b.css",
+    "static/js/main.b5db4bda.js"
   ]
 }
