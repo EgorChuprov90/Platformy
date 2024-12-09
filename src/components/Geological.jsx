@@ -30,7 +30,7 @@ function Geological() {
             <div className="geological__conditions">
             <p className="geological__subtitle geological__subtitle_mobile ">В комплекс выполняемых работ входят:</p>
                 <ul className="geological__conditions_list">
-                    <li className="geological__conditions_item"><img src={tilda} alt="tilda" /><p>Бурение вертикальных и наклонных скважин глубиной до 1200 п.м. диаметрами PQ, HQ, NQ, BQ, в том числе бурение в подземных выработках</p></li>
+                    <li className="geological__conditions_item"><img src={tilda} alt="tilda" /><p>Бурение вертикальных и наклонных скважин глубиной до 1200 м. диаметрами PQ, HQ, NQ, BQ. В том числе бурение в подземных выработках</p></li>
                     <li className="geological__conditions_item"><img src={tilda} alt="tilda" /><p>Горные работы по проходке канав и траншей</p></li>
                     <li className="geological__conditions_item"><img src={tilda} alt="tilda" /><p>Комплексное геофизическое исследование скважин</p></li>
                     <li className="geological__conditions_item"><img src={tilda} alt="tilda" /><p>Геологическое сопровождение бурения, включая документацию керна

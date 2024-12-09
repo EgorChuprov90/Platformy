@@ -9,7 +9,7 @@ export const ServicesData = [
     path:'/services/geological'
 },
   {
-    title: 'СГД',
+    title: 'Скважинная гидродобыча',
     picture: sgd,
     path:'/services/sgd'
 },

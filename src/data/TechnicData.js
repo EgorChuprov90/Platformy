@@ -110,7 +110,7 @@ export const TechData = [
   },
     {
       title: 'Малая разборная самоподъёмная платформа',
-      content: `«Посейдон»`,
+      content: `««Widson-50»`,
       picture: flot02,
     count: '1 шт.',
     id: 2

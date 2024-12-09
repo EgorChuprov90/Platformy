@@ -21,7 +21,7 @@ function About() {
       <div className="container">
               <div className="headline">
                   <p className="headline__name">ООО «морские платформы»</p>
-                  <h1 className="headline__direction"><span>Геолого</span><wbr/>разведка</h1>
+                  <h1 className="headline__direction">Геологоразведка</h1>
                   <div className="pip"><p className="headline__about land">На суше</p>
                   <p className="headline__about sea">На воде</p></div>
                   <button onClick={handleClick} className="headline__more">Подробнее</button>
@@ -57,14 +57,14 @@ function About() {
                 <div className="advantages__purpose target">
                     <img src={target} alt="target" className="target__logo" />
                     <p class="target__title">Цель создания компании</p>
-                    <p class="target__text">– геологоразведка на суше и в морской акватории, а также добыча полезных ископаемых уникальным запатентованным методом СГД (скважинной гидродобычи).</p>
+                    <p class="target__text">– бурение на суше и в море, добыча полезных ископаемых уникальным  методом скважинной гидродобычи (СГД)</p>
                 </div>
                 <div className="advantages__idea target">
                     <img src={idea} alt="idea" className="target__logo" />
                     <p class="target__title">Идея развития компании</p>
                     <p class="target__text"> – получение добавочной стоимости при выполнении уникальных и технически сложных работ в труднодоступных морских и сухопутных районах.</p>
                 </div>
-                <div className="advantages__title">Основные вектора развития</div>
+                <div className="advantages__title">Основные векторы развития</div>
                 <div className="advantages__vector">
                     <div className="vector__card">
                         <img src={number1} alt="01" className="card__number card__number_pc" />
@@ -85,8 +85,7 @@ function About() {
                         <img src={number3} alt="03" className="card__number card__number_pc" />
                         <img src={number3M} alt="03" className="card__number card__number_mobile" />
                         <div className="card__text">
-                        Морское бурение и СРТ (статическое зондирование) с буровых платформ
-                        и специализированных судов
+                        Морское бурение и статическое зондирование (СРТ) с буровых платформ и специализированных судов
                         </div>
                     </div>
                 </div>

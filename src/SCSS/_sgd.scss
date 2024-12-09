@@ -1,4 +1,66 @@
 .sgd{
+    & .slick_prev{
+        background: url(./img/test/arrowPrev.png) no-repeat;
+        background-size: contain;
+        width: 78px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        z-index: 999;
+        @media (max-width: 768px){   
+            display: none;
+        }
+        }
+       & .slick_next{
+            background: url(./img/test/arrowNext.png) no-repeat;
+            background-size: contain;
+            width: 78px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            right: 2%;
+            z-index: 99;
+            @media (max-width: 768px){   
+                display: none;
+            }
+        }
+       & .slick-dots{
+            display: flex !important;
+            gap:1% !important;
+            left: 50%;
+            bottom: -10% !important;
+            transform: translateX(-50%);
+            @media (max-width: 767px){   
+                bottom: -40px !important;
+            }
+        }
+       & .slick-dots li{
+            width: 20% !important;
+            flex: 0 1 33% !important;
+        
+        }
+       & .slick-dots button:before{
+            background: #008081;
+            border-radius: 25px;
+            height: 4px !important;
+            width: 100% !important;
+            font-size: 0 !important;
+            
+        }
+       & .slick-slide img{
+            width: 100% !important;
+            object-fit: cover;
+        }
+    background: #FAFAFA;
+    flex: 1 0 auto;
+    &__slider{
+        position: relative;
+        width: 50%;
+        @media (max-width: 768px){   
+            width: 100%;
+        }
+    }
     &__title{
         display: flex;
         align-items: center;
@@ -18,7 +80,7 @@
     }
     &__subtitle{
         font-weight: 600;
-        @include adaptiv-font(24, 10);
+        @include adaptiv-font(22, 10);
         line-height: 1.1em;
         padding-bottom: 0.5em;
         border-bottom: 1px solid #3CD1C2;
@@ -29,6 +91,7 @@
         gap: 5%;
         justify-content: center;
         margin-top: 5em;
+        margin-bottom: 5em;
         @media (max-width: 768px){
             flex-direction: column-reverse;
         }
@@ -79,8 +142,10 @@
         align-items: flex-start;
         gap: 5%;
         margin-top: 5em;
+        margin-bottom: 10em;
         @media (max-width: 768px){
             flex-direction: column;
+            margin-bottom: 5em;
         }
         &_img{
             width: 60%;
@@ -100,12 +165,11 @@
         &_list{
             display: flex;
             flex-direction: column;
-            gap: 1em;
+            gap: 2em;
             @include adaptiv-font(16, 1);
             @media (max-width: 768px){
-                @include adaptiv-font(26, 14); 
+                @include adaptiv-font(26, 12); 
                 gap: 1.5em;
-
             }
         }
         &_item{
@@ -138,7 +202,6 @@
             width: 100%;
             object-fit: contain;
             @include adaptiv-font(20, 1);
-            margin-bottom: 10em;
             @media (max-width: 768px){
                 display: none;
             }

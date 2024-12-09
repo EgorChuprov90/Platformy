@@ -230,7 +230,6 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 60vmax;
   left: 0;
   bottom: -50vmax;
   background-color: #FFFFFF;
@@ -271,7 +270,6 @@ h2 {
   cursor: pointer;
   height: 100%;
   color: #075D5E;
-  -webkit-text-fill-color: #075D5E;
 }
 .menu__link a {
   color: #075D5E;
@@ -295,16 +293,16 @@ h2 {
   }
 }
 .menu__link_mobile:active {
-  color: #075D5E;
-  -webkit-text-fill-color: #075D5E;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
 }
 .menu__link_mobile:visited {
   color: #075D5E;
   -webkit-text-fill-color: #075D5E;
 }
 .menu__link_mobile:hover {
-  color: #075D5E;
-  -webkit-text-fill-color: #075D5E;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
 }
 .menu__link_mobile:link {
   color: #075D5E;
@@ -325,7 +323,7 @@ h2 {
 }
 
 .preview {
-  background-size: cover;
+  background-size: 200px;
   width: 100vw;
   height: 100vh;
   margin-top: -7.5rem;
@@ -415,12 +413,12 @@ h2 {
 }
 @media (max-width: 767px) {
   .headline__direction {
-    font-size: calc(5px + 147.9 * (100vw - 320px) / 1920);
+    font-size: calc(5px + 130.9 * (100vw - 320px) / 1920);
   }
 }
 @media (min-width: 767px) {
   .headline__direction {
-    font-size: calc(5px + 87 * 100vw / 1920);
+    font-size: calc(5px + 77 * 100vw / 1920);
   }
 }
 @media (max-width: 1024px) and (max-width: 767px) {
@@ -436,11 +434,17 @@ h2 {
 @media (max-width: 768px) {
   .headline__direction {
     width: min-content;
+    margin-top: 2em;
   }
 }
-@media (max-width: 768px) {
-  .headline__direction span {
-    letter-spacing: 0.32em;
+@media (max-width: 768px) and (max-width: 767px) {
+  .headline__direction {
+    font-size: calc(20px + 122.4 * (100vw - 320px) / 1920);
+  }
+}
+@media (max-width: 768px) and (min-width: 767px) {
+  .headline__direction {
+    font-size: calc(20px + 72 * 100vw / 1920);
   }
 }
 .headline__direction::after {
@@ -454,9 +458,10 @@ h2 {
   border-radius: 25px;
   background-color: #38F5C8;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .headline__direction::after {
     width: 100%;
+    bottom: -50%;
   }
 }
 .headline__more {
@@ -471,12 +476,12 @@ h2 {
 }
 @media (max-width: 767px) {
   .headline__more {
-    font-size: calc(4px + 20.4 * (100vw - 320px) / 1920);
+    font-size: calc(4px + 23.8 * (100vw - 320px) / 1920);
   }
 }
 @media (min-width: 767px) {
   .headline__more {
-    font-size: calc(4px + 12 * 100vw / 1920);
+    font-size: calc(4px + 14 * 100vw / 1920);
   }
 }
 @media (max-width: 768px) {
@@ -488,6 +493,11 @@ h2 {
 .pip {
   position: relative;
   margin-top: 2.25em;
+}
+@media (max-width: 768px) {
+  .pip {
+    margin-top: 1.5em;
+  }
 }
 
 .land {
@@ -775,132 +785,174 @@ h2 {
 }
 @-webkit-keyframes bgcolor {
   0% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   5% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   10% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   15% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   20% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   25% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   30% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   35% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   40% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   45% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   50% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   55% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   60% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   65% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   70% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   75% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   80% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   85% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   90% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   95% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   100% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
 }
 @keyframes bgcolor {
   0% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   5% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   10% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   15% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   20% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   25% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   30% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   35% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   40% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   45% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   50% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   55% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   60% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   65% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   70% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   75% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   80% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   85% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   90% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   95% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   100% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
 }
 @media (max-width: 768px) {
@@ -1042,7 +1094,6 @@ h2 {
   z-index: 1;
   width: 100vw;
   height: 70vh;
-  max-height: 650px;
   background: url(./img/mountain.png) no-repeat;
   background-position: center;
   background-size: cover;
@@ -1438,7 +1489,6 @@ h2 {
   display: flex;
   gap: 35px;
   justify-content: space-between;
-  align-items: flex-start;
 }
 @media (max-width: 1200px) {
   .preeminence__list {
@@ -1447,6 +1497,8 @@ h2 {
   }
 }
 .preeminence__card {
+  display: flex;
+  flex-direction: column;
   background: #ffffff;
   max-width: 345px;
   width: 100%;
@@ -1457,12 +1509,8 @@ h2 {
   cursor: pointer;
   min-width: 170px;
 }
-@media (min-width: 2080px) {
-  .preeminence__card {
-    min-height: 366px;
-  }
-}
 .preeminence__card_tittle {
+  flex: 1 0 auto;
   margin-top: 2.5em;
   display: flex;
   justify-content: space-between;
@@ -1801,14 +1849,14 @@ h2 {
 @media (max-width: 1024px) {
   .services {
     background: url(./img/servicesBGM.png) no-repeat;
-    background-position: 75%;
+    background-position: 75% -10vmax;
     background-size: cover;
   }
 }
 @media (max-width: 767px) {
   .services {
-    background-size: 150vmax;
-    background-position: 75% -20vmax;
+    background-size: auto 55%;
+    background-position: 75% 0vmax;
   }
 }
 .services__title {
@@ -1841,7 +1889,7 @@ h2 {
   max-width: 50%;
   width: max-content;
   line-height: 1.5em;
-  margin-bottom: 30em;
+  margin-bottom: 30vh;
 }
 @media (max-width: 767px) {
   .services__text {
@@ -1889,6 +1937,10 @@ h2 {
   flex: 0 0 30%;
   max-width: 455px;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #008082;
 }
 @media (max-width: 767px) {
   .services__card {
@@ -1899,6 +1951,8 @@ h2 {
   color: #ffffff;
 }
 .services__card_text {
+  flex: 1 0 auto;
+  gap: 5px;
   background: #008082;
   display: flex;
   align-items: center;
@@ -2139,6 +2193,76 @@ h2 {
   }
 }
 
+.sgd {
+  background: #FAFAFA;
+  flex: 1 0 auto;
+}
+.sgd .slick_prev {
+  background: url(./img/test/arrowPrev.png) no-repeat;
+  background-size: contain;
+  width: 78px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  z-index: 999;
+}
+@media (max-width: 768px) {
+  .sgd .slick_prev {
+    display: none;
+  }
+}
+.sgd .slick_next {
+  background: url(./img/test/arrowNext.png) no-repeat;
+  background-size: contain;
+  width: 78px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  z-index: 99;
+}
+@media (max-width: 768px) {
+  .sgd .slick_next {
+    display: none;
+  }
+}
+.sgd .slick-dots {
+  display: flex !important;
+  gap: 1% !important;
+  left: 50%;
+  bottom: -10% !important;
+  transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+  .sgd .slick-dots {
+    bottom: -40px !important;
+  }
+}
+.sgd .slick-dots li {
+  width: 20% !important;
+  flex: 0 1 33% !important;
+}
+.sgd .slick-dots button:before {
+  background: #008081;
+  border-radius: 25px;
+  height: 4px !important;
+  width: 100% !important;
+  font-size: 0 !important;
+}
+.sgd .slick-slide img {
+  width: 100% !important;
+  object-fit: cover;
+}
+.sgd__slider {
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .sgd__slider {
+    width: 100%;
+  }
+}
 .sgd__title {
   display: flex;
   align-items: center;
@@ -2180,12 +2304,12 @@ h2 {
 }
 @media (max-width: 767px) {
   .sgd__subtitle {
-    font-size: calc(10px + 23.8 * (100vw - 320px) / 1920);
+    font-size: calc(10px + 20.4 * (100vw - 320px) / 1920);
   }
 }
 @media (min-width: 767px) {
   .sgd__subtitle {
-    font-size: calc(10px + 14 * 100vw / 1920);
+    font-size: calc(10px + 12 * 100vw / 1920);
   }
 }
 .sgd__tech {
@@ -2194,6 +2318,7 @@ h2 {
   gap: 5%;
   justify-content: center;
   margin-top: 5em;
+  margin-bottom: 5em;
 }
 @media (max-width: 768px) {
   .sgd__tech {
@@ -2303,10 +2428,12 @@ h2 {
   align-items: flex-start;
   gap: 5%;
   margin-top: 5em;
+  margin-bottom: 10em;
 }
 @media (max-width: 768px) {
   .sgd__conditions {
     flex-direction: column;
+    margin-bottom: 5em;
   }
 }
 .sgd__conditions_img {
@@ -2344,7 +2471,7 @@ h2 {
 .sgd__conditions_list {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
 }
 @media (max-width: 767px) {
   .sgd__conditions_list {
@@ -2363,12 +2490,12 @@ h2 {
 }
 @media (max-width: 768px) and (max-width: 767px) {
   .sgd__conditions_list {
-    font-size: calc(14px + 20.4 * (100vw - 320px) / 1920);
+    font-size: calc(12px + 23.8 * (100vw - 320px) / 1920);
   }
 }
 @media (max-width: 768px) and (min-width: 767px) {
   .sgd__conditions_list {
-    font-size: calc(14px + 12 * 100vw / 1920);
+    font-size: calc(12px + 14 * 100vw / 1920);
   }
 }
 .sgd__conditions_item {
@@ -2425,7 +2552,6 @@ h2 {
 .sgd__principle_img {
   width: 100%;
   object-fit: contain;
-  margin-bottom: 10em;
 }
 @media (max-width: 767px) {
   .sgd__principle_img {
@@ -3727,6 +3853,7 @@ h2 {
   }
 }
 .expa__accordion {
+  line-height: 1.75em;
   width: 100%;
   padding: 20px 15px 20px 15px;
   cursor: pointer;
@@ -3748,12 +3875,12 @@ h2 {
 }
 @media (max-width: 768px) and (max-width: 767px) {
   .expa__accordion_title {
-    font-size: calc(16px + 40.8 * (100vw - 320px) / 1920);
+    font-size: calc(12px + 47.6 * (100vw - 320px) / 1920);
   }
 }
 @media (max-width: 768px) and (min-width: 767px) {
   .expa__accordion_title {
-    font-size: calc(16px + 24 * 100vw / 1920);
+    font-size: calc(12px + 28 * 100vw / 1920);
   }
 }
 .expa__accordion_subtitle {
@@ -3774,12 +3901,12 @@ h2 {
 }
 @media (max-width: 768px) and (max-width: 767px) {
   .expa__accordion_subtitle {
-    font-size: calc(12px + 30.6 * (100vw - 320px) / 1920);
+    font-size: calc(10px + 34 * (100vw - 320px) / 1920);
   }
 }
 @media (max-width: 768px) and (min-width: 767px) {
   .expa__accordion_subtitle {
-    font-size: calc(12px + 18 * 100vw / 1920);
+    font-size: calc(10px + 20 * 100vw / 1920);
   }
 }
 .expa__accordion_subtitle span {
@@ -3810,12 +3937,12 @@ h2 {
 }
 @media (max-width: 768px) and (max-width: 767px) {
   .expa__accordion_list li {
-    font-size: calc(12px + 30.6 * (100vw - 320px) / 1920);
+    font-size: calc(10px + 34 * (100vw - 320px) / 1920);
   }
 }
 @media (max-width: 768px) and (min-width: 767px) {
   .expa__accordion_list li {
-    font-size: calc(12px + 18 * 100vw / 1920);
+    font-size: calc(10px + 20 * 100vw / 1920);
   }
 }
 .expa__accordion_list li::marker {

@@ -9,12 +9,12 @@
     flex: 1 0 auto;
     @media (max-width: 1024px){
         background: url(./img/servicesBGM.png) no-repeat;
-        background-position: 75%;
+        background-position: 75% -10vmax;
         background-size: cover;
         }
         @media (max-width: 767px){
-            background-size: 150vmax;
-            background-position: 75% -20vmax;
+            background-size: auto 55%;
+            background-position: 75% 0vmax;
             }
     &__title{
         margin: 3em 0 1em;
@@ -31,7 +31,7 @@
         width: max-content;
         line-height: 1.5em;
         @include adaptiv-font(16, 5);
-        margin-bottom: 30em;
+        margin-bottom: 30vh;
         @media (max-width: 1024px){
             @include adaptiv-font(24, 14);
             max-width: 100%;
@@ -56,6 +56,10 @@
         flex: 0 0 30%;
         max-width: 455px;
         color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #008082;
         @media (max-width: 767px){
             width: 80%;       
             }
@@ -63,6 +67,8 @@
             color: #ffffff;
         }
         &_text{
+            flex: 1 0 auto;
+            gap: 5px;
         background: #008082;
         display: flex;
         align-items: center;

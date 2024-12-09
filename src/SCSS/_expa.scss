@@ -299,6 +299,7 @@
         }
     }
     &__accordion{
+        line-height: 1.75em;
         width: 100%; 
         padding: 20px 15px 20px 15px;
         cursor: pointer;
@@ -308,7 +309,7 @@
         padding-bottom: 2px;
         cursor: pointer;
         @media (max-width: 768px){
-            @include adaptiv-font(40, 16);
+            @include adaptiv-font(40, 12);
         }
         } 
         &_subtitle{
@@ -317,7 +318,7 @@
             padding-bottom: 15px; 
             @include adaptiv-font(20, 2);
             @media (max-width: 768px){
-                @include adaptiv-font(30, 12);
+                @include adaptiv-font(30, 10);
             }
             line-height: 1.5em;
             & span {
@@ -337,7 +338,7 @@
             line-height: 1.5em;
             margin-top: 15px;
             @media (max-width: 768px){
-                @include adaptiv-font(30, 12);
+                @include adaptiv-font(30, 10);
             }
          &::marker { 
      color: #3CD1C2; 

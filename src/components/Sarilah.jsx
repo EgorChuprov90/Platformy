@@ -29,7 +29,7 @@ function Sarilah() {
     const handleClickOutside3 = () => { 
       setIsActive3(false) 
     } 
-    useOnClickOutside(ref3, handleClickOutside2)
+    useOnClickOutside(ref3, handleClickOutside3)
      
      
     return ( 

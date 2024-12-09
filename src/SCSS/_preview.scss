@@ -1,5 +1,5 @@
 .preview{
-    background-size: cover;
+    background-size: 200px;
     width: 100vw;
     height: 100vh;
         margin-top: -7.5rem;
@@ -50,7 +50,7 @@
 }
 &__direction{
     text-align: center;
-    @include adaptiv-font(92, 5);
+    @include adaptiv-font(82, 5);
     font-weight: 300;
     line-height: 1em;
     margin-top: 0.37em;
@@ -61,12 +61,8 @@
     }
     @media (max-width: 768px){
       width: min-content; 
-    }
-    & span{
-      @media (max-width: 768px){
-      letter-spacing: 0.32em;
-       
-    } 
+      @include adaptiv-font(92, 20);
+      margin-top: 2em;
     }
   
     &::after {
@@ -79,8 +75,9 @@
         height: 4px;
         border-radius: 25px;
         background-color: #38F5C8;
-        @media (max-width: 768px){
-          width: 100%; 
+        @media (max-width: 767px){
+          width: 100%;
+          bottom: -50%; 
         }
     }
 }
@@ -89,7 +86,7 @@
     background-color: #3CD1C2;
     border-radius: 25px;
     color: #FFFFFF;
-    @include adaptiv-font(16, 4);
+    @include adaptiv-font(18, 4);
     font-weight: 500;
     min-width: 285px;
     padding: 20px 90px 20px 90px;
@@ -102,6 +99,9 @@
 .pip{
   position: relative;
   margin-top: 2.25em;
+  @media (max-width: 768px){
+    margin-top: 1.5em;
+  }
 }
 .land{
   -webkit-animation-name: textland;
@@ -394,133 +394,175 @@
 
 @-webkit-keyframes bgcolor {
   0% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   5% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   10% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   15% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   20% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   25% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   30% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   35% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   40% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   45% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   50% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   55% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   60% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   65% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   70% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   75% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   80% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   85% {
-    background: url("./img/previewBg2.png") right bottom no-repeat;
+    background: url("./img/previewBg2.png") right center no-repeat;
+    background-size: cover;
   }
   90% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   95% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   100% {
-    background: url("./img/previewBg.png") right bottom no-repeat;
+    background: url("./img/previewBg.png") right center no-repeat;
+    background-size: cover;
   }
   }
   
   @keyframes bgcolor {
     0% {
-      background: url("./img/previewBg.png") right bottom no-repeat;
+      background: url("./img/previewBg.png") right center no-repeat;
+      background-size: cover;
     }
     5% {
-      background: url("./img/previewBg.png") right bottom no-repeat;
+      background: url("./img/previewBg.png") right center no-repeat;
+      background-size: cover;
     }
     10% {
-      background: url("./img/previewBg.png") right bottom no-repeat;
+      background: url("./img/previewBg.png") right center no-repeat;
+      background-size: cover;
     }
     15% {
-      background: url("./img/previewBg2.png") right bottom no-repeat;
+      background: url("./img/previewBg2.png") right center no-repeat;
+      background-size: cover;
     }
     20% {
-      background: url("./img/previewBg2.png") right bottom no-repeat;
+      background: url("./img/previewBg2.png") right center no-repeat;
+      background-size: cover;
     }
     25% {
-      background: url("./img/previewBg2.png") right bottom no-repeat;
+      background: url("./img/previewBg2.png") right center no-repeat;
+      background-size: cover;
     }
     30% {
-      background: url("./img/previewBg.png") right bottom no-repeat;
+      background: url("./img/previewBg.png") right center no-repeat;
+      background-size: cover;
     }
     35% {
-      background: url("./img/previewBg.png") right bottom no-repeat;
+      background: url("./img/previewBg.png") right center no-repeat;
+      background-size: cover;
     }
     40% {
-      background: url("./img/previewBg.png") right bottom no-repeat;
+      background: url("./img/previewBg.png") right center no-repeat;
+      background-size: cover;
     }
     45% {
-      background: url("./img/previewBg2.png") right bottom no-repeat;
+      background: url("./img/previewBg2.png") right center no-repeat;
+      background-size: cover;
     }
     50% {
-      background: url("./img/previewBg2.png") right bottom no-repeat;
+      background: url("./img/previewBg2.png") right center no-repeat;
+      background-size: cover;
     }
     55% {
-      background: url("./img/previewBg2.png") right bottom no-repeat;
+      background: url("./img/previewBg2.png") right center no-repeat;
+      background-size: cover;
     }
     60% {
-      background: url("./img/previewBg.png") right bottom no-repeat;
+      background: url("./img/previewBg.png") right center no-repeat;
+      background-size: cover;
     }
     65% {
-      background: url("./img/previewBg.png") right bottom no-repeat;
+      background: url("./img/previewBg.png") right center no-repeat;
+      background-size: cover;
     }
     70% {
-      background: url("./img/previewBg.png") right bottom no-repeat;
+      background: url("./img/previewBg.png") right center no-repeat;
+      background-size: cover;
     }
     75% {
-      background: url("./img/previewBg2.png") right bottom no-repeat;
+      background: url("./img/previewBg2.png") right center no-repeat;
+      background-size: cover;
     }
     80% {
-      background: url("./img/previewBg2.png") right bottom no-repeat;
+      background: url("./img/previewBg2.png") right center no-repeat;
+      background-size: cover;
     }
     85% {
-      background: url("./img/previewBg2.png") right bottom no-repeat;
+      background: url("./img/previewBg2.png") right center no-repeat;
+      background-size: cover;
     }
     90% {
-      background: url("./img/previewBg.png") right bottom no-repeat;
+      background: url("./img/previewBg.png") right center no-repeat;
+      background-size: cover;
     }
     95% {
-      background: url("./img/previewBg.png") right bottom no-repeat;
+      background: url("./img/previewBg.png") right center no-repeat;
+      background-size: cover;
     }
     100% {
-      background: url("./img/previewBg.png") right bottom no-repeat;
+      background: url("./img/previewBg.png") right center no-repeat;
+      background-size: cover;
     }
     }
 
