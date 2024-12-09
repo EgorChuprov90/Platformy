@@ -23,14 +23,13 @@
         display: flex;
         gap: 35px;
         justify-content: space-between;
+        align-items: flex-start;
         @media  (max-width: 1200px){
         flex-wrap: wrap;
         justify-content: center;
           }
     }
     &__card{
-        display: flex;
-        flex-direction: column;
         background: #ffffff;
     max-width: 345px;
     width: 100%;
@@ -41,12 +40,11 @@
     cursor: pointer;
     min-width: 170px;
     &_tittle{
-        flex: 1 0 auto;
         margin-top: 2.5em;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        @include adaptiv-font(20, 10);
+        @include adaptiv-font(16, 10);
         @media  (max-width: 1024px){
             @include adaptiv-font(24, 16);
               }

@@ -1489,6 +1489,7 @@ h2 {
   display: flex;
   gap: 35px;
   justify-content: space-between;
+  align-items: flex-start;
 }
 @media (max-width: 1200px) {
   .preeminence__list {
@@ -1497,8 +1498,6 @@ h2 {
   }
 }
 .preeminence__card {
-  display: flex;
-  flex-direction: column;
   background: #ffffff;
   max-width: 345px;
   width: 100%;
@@ -1510,7 +1509,6 @@ h2 {
   min-width: 170px;
 }
 .preeminence__card_tittle {
-  flex: 1 0 auto;
   margin-top: 2.5em;
   display: flex;
   justify-content: space-between;
@@ -1521,12 +1519,12 @@ h2 {
 }
 @media (max-width: 767px) {
   .preeminence__card_tittle {
-    font-size: calc(10px + 17 * (100vw - 320px) / 1920);
+    font-size: calc(10px + 10.2 * (100vw - 320px) / 1920);
   }
 }
 @media (min-width: 767px) {
   .preeminence__card_tittle {
-    font-size: calc(10px + 10 * 100vw / 1920);
+    font-size: calc(10px + 6 * 100vw / 1920);
   }
 }
 @media (max-width: 1024px) and (max-width: 767px) {
