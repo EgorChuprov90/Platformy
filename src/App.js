@@ -11,13 +11,14 @@ import Sgd from './components/Sgd';
 import Geological from './components/Geological';
 import Marine from './components/Marine';
 import Popup from './components/Popup';
-
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
 
   return (
     <div className="App">
       <HashRouter>
+        <ScrollToTop/>
       <Header/>
       <Routes>
         <Route path="/" element={<Main/>} />

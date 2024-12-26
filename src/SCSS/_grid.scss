@@ -11,7 +11,20 @@ $maxWidth: 1920;
     }
      }
 
-
+     ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+        background-color: #D3D3D3;
+        border-radius: 10px;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: linear-gradient(180deg, #3CD1C2, #008081);
+      }
 
 
 html{
@@ -24,7 +37,7 @@ html{
 
 }
 #root{
-    height: 100%;
+   height: 100%;
    /* overflow-x: hidden;*/
 
 }
@@ -37,7 +50,7 @@ html{
 body {
     font-family: Montserrat;
     font-weight: 400;
-   width: 100vw;
+   width: 100%;
    /*overflow-x: hidden;*/
    height: 100%;
     background: #FAFAFA;
@@ -47,11 +60,11 @@ body {
     .container {
         max-width: 1690px;
         padding: 0 110px;
-        width: 100vw;
+        width: 100%;
         margin: 0 auto;
         @media (max-width: 1024px){
             padding: 0 20px;
-            width: 100vw;
+            width: 100%;
         }
     }
 
@@ -61,8 +74,3 @@ body {
         @include adaptiv-font(48, 5);
         font-weight: bold;
      }
-
-    /* * {
-        outline: 1px solid #f00 !important;
-
-      }*/

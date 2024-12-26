@@ -94,6 +94,21 @@ h6 {
 }
 
 /*--------------------*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #D3D3D3;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #3CD1C2, #008081);
+}
+
 @media (max-width: 767px) {
   html {
     font-size: calc(10px + 17 * (100vw - 320px) / 1920);
@@ -122,7 +137,7 @@ h6 {
 body {
   font-family: Montserrat;
   font-weight: 400;
-  width: 100vw;
+  width: 100%;
   /*overflow-x: hidden;*/
   height: 100%;
   background: #FAFAFA;
@@ -131,13 +146,13 @@ body {
 .container {
   max-width: 1690px;
   padding: 0 110px;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 1024px) {
   .container {
     padding: 0 20px;
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -155,10 +170,6 @@ h2 {
   }
 }
 
-/* * {
-    outline: 1px solid #f00 !important;
-
-  }*/
 .menu {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -333,7 +344,7 @@ h2 {
 
 .preview {
   background-size: 200px;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   margin-top: -7.5rem;
   padding-top: 7.5rem;
@@ -1101,7 +1112,7 @@ h2 {
   flex: 1 0 auto;
   position: relative;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
   height: 70vh;
   background: url(./img/mountain.png) no-repeat;
   background-position: center;
@@ -1849,7 +1860,7 @@ h2 {
   background-position: top right;
   margin-top: -7.5rem;
   padding-top: 7.5rem;
-  width: 100vw;
+  width: 100%;
   color: #ffffff;
   flex: 1 0 auto;
 }
@@ -3038,6 +3049,7 @@ h2 {
 }
 
 .contacts {
+  overflow-x: hidden;
   margin-top: -7.5rem;
   padding-top: 7.5rem;
   background: #FAFAFA;
@@ -3079,7 +3091,7 @@ h2 {
 }
 .contacts__title::before {
   content: "";
-  width: 100vw;
+  width: 100%;
   height: 1px;
   background-color: #999999;
   position: absolute;
@@ -3155,7 +3167,7 @@ h2 {
   .contacts__map_mobile {
     display: block;
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
     height: 70vmax;
   }
 }
