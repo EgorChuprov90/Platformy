@@ -7,8 +7,8 @@ function Preeminence() {
     <div className="container">
       <p className="preeminence__title">Преимущества</p>
       <ul className="preeminence__list">
-      {PreeminenceData.map(({ title, content, picture }) => (
-          <PreeminenceCard title={title} content={content} picture={picture} />
+      {PreeminenceData.map(({ title, content, picture}, index) => (
+          <PreeminenceCard key={index} title={title} content={content} picture={picture} />
         ))}
       </ul>
     </div>

@@ -7,8 +7,8 @@ function Certificates() {
     <div className="container">
       <p className="certificates__title">сертификаты</p>
       <ul className="certificates__list">
-      {CertificatesData.map(({ title, content, picture }) => (
-          <CertificatesCard title={title} content={content} picture={picture} />
+      {CertificatesData.map(({ title, content, picture }, index) => (
+          <CertificatesCard key={index} title={title} content={content} picture={picture} />
         ))}
       </ul>
     </div>

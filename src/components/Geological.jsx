@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import arrowLeft from '../img/arrowLeft.png'
 import tilda from '../img/tilda.png'
 
-import geo1 from '../img/test/geo1.png';
+import geo1 from '../img/test/geo1.jpg';
 import geo2 from '../img/test/geo2.png';
-import geo3 from '../img/test/geo3.png';
+import geo3 from '../img/test/geo3.jpg';
 import { Link } from "react-router-dom";
 
 function Geological() {

@@ -56,13 +56,13 @@ function About() {
             <div className="advantages">
                 <div className="advantages__purpose target">
                     <img src={target} alt="target" className="target__logo" />
-                    <p class="target__title">Цель создания компании</p>
-                    <p class="target__text">– бурение на суше и в море, добыча полезных ископаемых уникальным  методом скважинной гидродобычи (СГД)</p>
+                    <p className="target__title">Цель создания компании</p>
+                    <p className="target__text">– бурение на суше и в море, добыча полезных ископаемых уникальным  методом скважинной гидродобычи (СГД)</p>
                 </div>
                 <div className="advantages__idea target">
                     <img src={idea} alt="idea" className="target__logo" />
-                    <p class="target__title">Идея развития компании</p>
-                    <p class="target__text"> – получение добавочной стоимости при выполнении уникальных и технически сложных работ в труднодоступных морских и сухопутных районах.</p>
+                    <p className="target__title">Идея развития компании</p>
+                    <p className="target__text"> – получение добавочной стоимости при выполнении уникальных и технически сложных работ в труднодоступных морских и сухопутных районах.</p>
                 </div>
                 <div className="advantages__title">Основные векторы развития</div>
                 <div className="advantages__vector">

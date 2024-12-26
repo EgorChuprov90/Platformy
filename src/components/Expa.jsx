@@ -46,30 +46,30 @@ function Expa() {
                 <p className="expa__subtitle">Партнеры</p>
                 <div className="expa__partners expa__partners_pc">
                     <div className='expa__partners__line1'>
-                {ExpaData1.map(({ picture }) => (
-                    <img src={picture} className='expa__partners_logo'/>
+                {ExpaData1.map(({ picture }, index) => (
+                    <img key={index} src={picture} className='expa__partners_logo'/>
         ))}
         </div>
                 <div className='expa__partners__line2'>
-        {ExpaData2.map(({ picture }) => (
-                    <img src={picture} className='expa__partners_logo'/>
+        {ExpaData2.map(({ picture }, index) => (
+                    <img key={index} src={picture} className='expa__partners_logo'/>
         ))}
         </div>
                 <div className='expa__partners__line3'>
-        {ExpaData3.map(({ picture }) => (
-                    <img src={picture} className='expa__partners_logo'/>
+        {ExpaData3.map(({ picture },  index) => (
+                    <img key={index} src={picture} className='expa__partners_logo'/>
         ))}
         </div>
                 </div>
                 <div className="expa__partners expa__partners_mobile">
-                {ExpaData1.map(({ picture }) => (
-                    <img src={picture} className='expa__partners_logo'/>
+                {ExpaData1.map(({ picture }, index) => (
+                    <img key={index} src={picture} className='expa__partners_logo'/>
         ))}
-        {ExpaData2.map(({ picture }) => (
-                    <img src={picture} className='expa__partners_logo'/>
+        {ExpaData2.map(({ picture }, index) => (
+                    <img key={index} src={picture} className='expa__partners_logo'/>
         ))}
-        {ExpaData3.map(({ picture }) => (
-                    <img src={picture} className='expa__partners_logo'/>
+        {ExpaData3.map(({ picture }, index) => (
+                    <img key={index} src={picture} className='expa__partners_logo'/>
         ))}
                 </div>
             </div>
