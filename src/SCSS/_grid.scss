@@ -25,7 +25,7 @@ html{
 }
 #root{
     height: 100%;
-    overflow-x: hidden;
+   /* overflow-x: hidden;*/
 
 }
 
@@ -37,9 +37,9 @@ html{
 body {
     font-family: Montserrat;
     font-weight: 400;
-    width: 100vw;
-    overflow-x: hidden;
-    height: 100%;
+   width: 100vw;
+   /*overflow-x: hidden;*/
+   height: 100%;
     background: #FAFAFA;
 
     }
@@ -61,3 +61,8 @@ body {
         @include adaptiv-font(48, 5);
         font-weight: bold;
      }
+
+    /* * {
+        outline: 1px solid #f00 !important;
+
+      }*/

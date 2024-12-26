@@ -1,6 +1,7 @@
 .expa{
     margin-top: -7.5rem;
     flex: 1 0 auto;
+    overflow-x: hidden;
     &__about{
         background: url(./img/expaBG.png) no-repeat;
         background-position: top right;

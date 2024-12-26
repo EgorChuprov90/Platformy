@@ -112,7 +112,7 @@ h6 {
 
 #root {
   height: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden;*/
 }
 
 .main {
@@ -123,7 +123,7 @@ body {
   font-family: Montserrat;
   font-weight: 400;
   width: 100vw;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   height: 100%;
   background: #FAFAFA;
 }
@@ -155,6 +155,10 @@ h2 {
   }
 }
 
+/* * {
+    outline: 1px solid #f00 !important;
+
+  }*/
 .menu {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -179,6 +183,11 @@ h2 {
   .menu {
     font-size: calc(4px + 12 * 100vw / 1920);
   }
+}
+.menu__container {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 @media (max-width: 768px) {
   .menu_pc {
@@ -3408,6 +3417,8 @@ h2 {
 .gallery {
   height: 80vh;
   position: relative;
+  overflow: hidden;
+  max-width: 100vw;
 }
 @media (max-width: 768px) {
   .gallery {
@@ -3491,6 +3502,7 @@ h2 {
 .expa {
   margin-top: -7.5rem;
   flex: 1 0 auto;
+  overflow-x: hidden;
 }
 .expa__about {
   background: url(./img/expaBG.png) no-repeat;
