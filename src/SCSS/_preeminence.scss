@@ -7,6 +7,7 @@
     padding-bottom: 1.75em;
     background: url('./img/preeminence.png') no-repeat;
     background-size: cover;
+    background-position:center ;
         &__title{
             font-weight: 700;
             @include adaptiv-font(45, 35);  
@@ -52,15 +53,23 @@
         font-weight: 500;
         line-height: 1.5em; 
     }
-    &_arrow{
+    &_close{
         object-fit: none;
+        transition: all 0.2s linear;  
+       fill: #3CD1C2;   
+    }
+    &_open{
+        object-fit: none;
+        transition: all 0.2s linear;  
+       fill: #414142; 
+       transform:rotate(-180deg);    
     }
     &_text{  
         @include adaptiv-font(14, 5);
         line-height: 1.5em; 
         margin-top: 1em;
         @media  (max-width: 1024px){
-            @include adaptiv-font(16, 10);
+            @include adaptiv-font(16, 14);
               }
     }
 } 

@@ -30,7 +30,7 @@ function Sgd() {
 <section className="sgd">
       <div className="container">
         <Link to='/services' className="sgd__title"><img src={arrowLeft} alt="Назад" /><p>Скважинная гидродобыча</p></Link>
-        <p className="sgd__subtitle"><strong>Метод СГД</strong> заключается в добыче твердых полезных ископаемых через скважины без проведения вскрышных работ</p>
+        <p className="sgd__subtitle"><strong>Метод СГД</strong> заключается в добыче твердых полезных ископаемых через <br/> скважины без проведения вскрышных работ</p>
         <div className="sgd__tech">
             <div className="sgd__tech_text">
                 <p className="sgd__tech_title">Базовые принципы технологии:</p>
@@ -40,6 +40,7 @@ function Sgd() {
                     <li className="sgd__tech_item"><p>3.</p><p>На поверхности пульпа подается на специальный прибор для промывки</p></li>
                 </ul>
             </div>
+            <p className="sgd__subtitle_mobile"><strong>Метод СГД</strong> заключается в добыче твердых полезных ископаемых через <br/> скважины без проведения вскрышных работ</p>
             <div className="sgd__slider">
                         <button className="slick_prev" onClick={() => slider?.current?.slickPrev()}></button>
                             <Slider ref={slider} {...settings}>
@@ -49,6 +50,7 @@ function Sgd() {
                             </Slider>
                         <button className="slick_next" onClick={() => slider?.current?.slickNext()}></button>        
                     </div>
+                    
         </div>
         <p className="sgd__principle_title">Преимущества технологии:</p>
         <img src={principle} alt="" className="sgd__principle_img" />

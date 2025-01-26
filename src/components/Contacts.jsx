@@ -1,8 +1,8 @@
 import map from "../img/map.png"
 import mapM from "../img/mapM.png"
-import phone from '../img/phone.png'
-import mail from '../img/mail.png'
-import location from '../img/location.png'
+import phone from '../img/phone.svg'
+import mail from '../img/mail.svg'
+import location from '../img/location.svg'
 
 import React from 'react';
 

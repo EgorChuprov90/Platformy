@@ -1,18 +1,18 @@
-import bur01 from '../img/technic/bur01.png'
-import bur02 from '../img/technic/bur02.png'
-import bur03 from '../img/technic/bur03.png'
-import bur04 from '../img/technic/bur04.png'
+import bur01 from '../img/technic/bur01.svg'
+import bur02 from '../img/technic/bur02.svg'
+import bur03 from '../img/technic/bur03.svg'
+import bur04 from '../img/technic/bur04.svg'
 
-import tech01 from '../img/technic/tech01.png'
-import tech02 from '../img/technic/tech02.png'
-import tech03 from '../img/technic/tech03.png'
-import tech04 from '../img/technic/tech04.png'
-import tech05 from '../img/technic/tech05.png'
-import tech06 from '../img/technic/tech06.png'
-import tech07 from '../img/technic/tech07.png'
+import tech01 from '../img/technic/tech01.svg'
+import tech02 from '../img/technic/tech02.svg'
+import tech03 from '../img/technic/tech03.svg'
+import tech04 from '../img/technic/tech04.svg'
+import tech05 from '../img/technic/tech05.svg'
+import tech06 from '../img/technic/tech06.svg'
+import tech07 from '../img/technic/tech07.svg'
 
-import flot01 from '../img/technic/flot01.png'
-import flot02 from '../img/technic/flot02.png'
+import flot01 from '../img/technic/flot01.svg'
+import flot02 from '../img/technic/flot02.svg'
 
 
 

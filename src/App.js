@@ -16,9 +16,8 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
 
   return (
-    <div className="App">
+      <div className="App">
       <HashRouter>
-
         <ScrollToTop/>
       <Header/>
       <Routes>
@@ -34,7 +33,7 @@ function App() {
       </Routes>
       <Footer/>      
       </HashRouter>
-    </div>
+    </div>    
   );
 }
 

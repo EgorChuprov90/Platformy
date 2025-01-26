@@ -69,6 +69,7 @@ padding-top: 2em;
           max-width: 100%;
           border-left:0px solid #3CD1C2;
           padding-left: 0;
+          gap: 1.5em;
       }
     }
 }
@@ -88,6 +89,9 @@ padding-top: 2em;
           flex-direction: column;
           margin-top: 2.5em;
     }
+    @media (max-width: 768px){
+      gap: 2em 0px;
+}
       &__purpose{
         grid-area: purpose;
         justify-self: start; 
@@ -105,7 +109,8 @@ padding-top: 2em;
         font-weight: 700;
         @include adaptiv-font(24, 14);
         @media (max-width: 1024px){
-          @include adaptiv-font(45, 25);
+          @include adaptiv-font(45, 16);
+          align-self: flex-start;
       }        
       }
       &__vector{
@@ -146,7 +151,8 @@ padding-top: 2em;
         @media (max-width: 1024px){
           &_mobile{
             display: block;
-            margin-right: 1.5em
+            margin-right: 1.5em;
+            align-self: flex-start;
           }
           &_pc{
             display: none;
@@ -161,9 +167,9 @@ padding-top: 2em;
         font-weight: 300;
         @include adaptiv-font(16, 8);
         @media (max-width: 1024px){
-          transform: translateY(25%);
+          line-height: 1.5em;
           width: 70%;
-          @include adaptiv-font(26, 10);
+          @include adaptiv-font(26, 14);
     }
     }
 }
@@ -198,7 +204,7 @@ padding-top: 2em;
         font-weight: 300;
         line-height: 1.5em;
         @media (max-width: 1024px){
-          @include adaptiv-font(16, 16);
+          @include adaptiv-font(16, 14);
       }
      }
   }

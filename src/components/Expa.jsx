@@ -1,4 +1,5 @@
 import Popup from './Popup';
+import PopupM from './PopupM';
 import {ExpaData1,ExpaData2,ExpaData3} from '../data/ExpaData'
 import Inzh from './Inzh';
 import Nork from './Nork';
@@ -32,13 +33,13 @@ function Expa() {
                     <Popup name={'expa__kolalI'} comp={<Kolali/>}/> 
                     <Popup name={'expa__kolaggk'} comp={<Kolaggk/>}/>
                     <Popup name={'expa__asphalt'} comp={<Asphalt/>}/>
-                    <Popup name={'expa__dikson'} comp={<Dikson/>}/>
+                    <PopupM name={'expa__dikson'} comp={<Dikson/>}/>
                     <Popup name={'expa__ingeo'} comp={<Inzh/>}/>
                     <Popup name={'expa__aopriisk'} comp={<Aopriisk/>}/>
                     <Popup name={'expa__rusburmash'} comp={<Rusburmash/>}/>
                     <Popup name={'expa__hork'} comp={<Nork/>}/>
                     <Popup name={'expa__uran'} comp={<Uran/>}/>
-                    <Popup name={'expa__sarilah'} comp={<Sarilah/>}/>
+                    <PopupM name={'expa__sarilah'} comp={<Sarilah/>}/>
                 </div>
             </div>
 

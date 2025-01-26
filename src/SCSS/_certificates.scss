@@ -24,6 +24,9 @@
         flex-wrap: wrap;
         justify-content: center;
           }
+          @media  (max-width: 768px){
+            display: none;
+              }
     }
     &__card{
         display: flex;
@@ -37,6 +40,9 @@
         @media  (max-width: 1200px){
             width: 100%;
               }
+              @media  (max-width: 768px){
+height: auto;
+                  }
         &_img{
             padding: 30px;
             margin-bottom: 40px;
@@ -50,8 +56,57 @@
             @include adaptiv-font(14, 10);
             line-height: 1.5em;
             @media  (max-width: 1200px){
-                @include adaptiv-font(18, 12);
+                @include adaptiv-font(18, 14);
                   }
         }
     } 
+    & .slick-dots{
+        display: flex !important;
+        gap:1% !important;
+        left: 50%;
+        bottom: 50% !important;
+        transform: translateX(-50%);
+        @media (max-width: 768px){   
+            bottom: -25% !important;
+        }
+    }
+   & .slick-dots li{
+        width: 20% !important;
+        flex: 0 1 33% !important;
+    
+    }
+   & .slick-dots button:before{
+        background: #ffffff;
+        border-radius: 25px;
+        height: 4px !important;
+        width: 100% !important;
+        font-size: 0 !important;
+        
+    }
+    & .slick-slide{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    & .slick-slider{
+display: none;
+@media (max-width: 768px){   
+    display: block;
+}
+    }
+    & .certificates__button{
+        margin-top: 5vh;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        @media (max-width: 768px){   
+            display: flex;
+        }
+        & .slick_prev{
+        background: none;
+        }
+        & .slick_next{
+            background: none;
+        }
+    }
 }  

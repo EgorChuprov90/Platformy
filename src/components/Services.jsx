@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import {ServicesData} from "../data/ServicesData";
 import ServicesCard from "./ServicesCard";
 
@@ -12,8 +11,8 @@ function Services() {
         <p>Мы предлагаем широкий спектр услуг для проведения геологоразведочных работ в различных условиях, обеспечивая высокое качество и профессиональный подход к каждому проекту. Наш опыт и компетенции позволяют нам эффективно решать самые сложные задачи в области геологии и разведки полезных ископаемых.</p>
     </div>
     <div className="services__list">
-    {ServicesData.map(({ title, picture, path }, index) => (
-          <ServicesCard key={index} title={title} picture={picture} path={path} />
+    {ServicesData.map(({ title, picture, path, pictureOpen }, index) => (
+          <ServicesCard key={index} title={title} picture={picture} path={path} pictureOpen={pictureOpen} />
         ))}
     </div>
     </div>

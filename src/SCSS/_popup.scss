@@ -9,11 +9,36 @@
         width: 100%;
         height: 100%;
         cursor: pointer;
+        & .circle1{
+            transition: all 0.3s linear;
+           }
+           & .circle2{
+            transition: all 0.4s linear;
+           }
+           & .circle3{
+            transition: all 0.5s linear;
+           } 
+        &_open{
+           & .circle1{
+            transition: all 0.3s linear;
+            fill: #414142;
+           }
+           & .circle2{
+            transition: all 0.4s linear;
+            r:0;
+           }
+           & .circle3{
+            transition: all 0.5s linear;
+            rx:0;
+            ry:0;
+           } 
+        }
     }
     &_open{
         transition: all 1s;
     }
     .popup__content{
+        padding-bottom: 20px;
         position: absolute;
         z-index: 999;
         background: #ffffff;
@@ -27,7 +52,7 @@
         opacity: 0;
         transition: top 10s ease-in, opacity 0.3s ease-out;
         @media (max-width: 768px){
-            width: 40vw;
+            width: 80vw;
         }
     }
 }

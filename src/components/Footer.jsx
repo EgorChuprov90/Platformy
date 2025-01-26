@@ -1,7 +1,7 @@
-import logoFooter from '../img/logoFooter.png'
-import phone from '../img/phone.png'
-import mail from '../img/mail.png'
-import location from '../img/location.png'
+import logoFooter from '../img/logoFooter.svg'
+import phone from '../img/phone.svg'
+import mail from '../img/mail.svg'
+import location from '../img/location.svg'
 import { Link } from 'react-router-dom';
 
 function Footer() {

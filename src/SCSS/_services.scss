@@ -2,8 +2,8 @@
     background: url(./img/servicesBG.png) no-repeat;
     background-size: cover;
     background-position: top right;
-    margin-top: -7.5rem;
-    padding-top: 7.5rem;
+    margin-top: -7.0rem;
+    padding-top: 7.0rem;
     width: 100%;
     color: #ffffff;
     flex: 1 0 auto;
@@ -60,13 +60,37 @@
         flex-direction: column;
         justify-content: space-between;
         background-color: #008082;
+        &:hover{
+           & .services__card_text{
+           transition: all 0.5s linear;
+                background: #3CD1C2;
+            } 
+            & .services__card_open{
+                transition: all 0.5s linear;
+                opacity: 1;
+            } 
+        }
         @media (max-width: 767px){
             width: 80%;       
             }
         &:visited{
             color: #ffffff;
         }
+        &_img{
+            position: relative;
+        }
+        &_open{
+            transition: all 0.5s linear;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+        }
         &_text{
+            transition: all 0.5s linear;
             flex: 1 0 auto;
             gap: 5px;
         background: #008082;

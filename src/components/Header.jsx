@@ -1,6 +1,3 @@
-import {useEffect} from "react";
-import {useLocation} from "react-router-dom";
-
 import logo from "../img/logo.svg";
 import { useRef, useState } from "react";
 import { useOnClickOutside } from 'usehooks-ts'

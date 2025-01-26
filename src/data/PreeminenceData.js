@@ -1,7 +1,7 @@
-import excavator from '../img/excavator.png'
-import man from '../img/man.png'
-import time from '../img/time.png'
-import key from '../img/key.png'
+import excavator from '../img/excavator.svg'
+import man from '../img/man.svg'
+import time from '../img/time.svg'
+import key from '../img/key.svg'
 
 export const PreeminenceData = [
   {

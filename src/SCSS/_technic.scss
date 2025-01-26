@@ -1,10 +1,10 @@
 .technic{
-    margin-top: -7.5rem;
+    margin-top: -7.0rem;
     flex: 1 0 auto;
     &__about{
         background: url(./img/technic.png) no-repeat;
         background-position: top right;
-        padding-top: 7.5rem;
+        padding-top: 7.0rem;
         background-size: cover;
         height: 75vh;
         position: relative;
@@ -65,10 +65,8 @@
     &__tech{
         display: flex;
         flex-direction: column;
-        gap:100px;
         padding: 100px 0;
         @media (max-width: 768px){ 
-            gap:20px;
             padding: 50px 0;
           }
     }
@@ -120,19 +118,33 @@
         }
         &_img{
             width: 306px;
+            height: 60%;
         }
     }
     &__accordion{
         &_list{
-            display: flex;
+           display: flex;
             gap: 20px;
             justify-content: flex-start;
             align-items: stretch;
-            margin-top: 60px;
+            margin-top: 30px;
+            margin-bottom: 30px;
             flex-wrap: wrap;
+            overflow-y: hidden;
             @media (max-width: 768px){   
                 flex-direction: column;
+                flex-wrap:nowrap;
+                margin-top: 15px;
+                margin-bottom: 30px;
             }
+        }
+        &_open{
+            max-height: 4000px;
+            transition: all 1.5s linear;
+        }
+        &_close{
+            max-height: 0;
+            transition: all 0.3s linear;
         }
         &_title{
             width: 100%;
